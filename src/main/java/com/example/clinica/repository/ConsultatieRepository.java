@@ -34,7 +34,7 @@ public class ConsultatieRepository extends ConcreteObservable<ConsultatieEvent> 
             connection = DriverManager.getConnection(url, username, password);
 
             String query = "SELECT * FROM consultatii " +
-                    "WHERE id_medic = ? AND \"data\" >= CURRENT_DATE AND ora > DATE_PART('hour', CURRENT_TIME) " +
+                    "WHERE id_medic = ? AND ((\"data\" > CURRENT_DATE) OR (\"data\" = CURRENT_DATE AND ora > DATE_PART('hour', CURRENT_TIME))) " +
                     "ORDER BY \"data\", ora";
             PreparedStatement statement = connection.prepareStatement(query);
             statement.setLong(1, medic.getId());

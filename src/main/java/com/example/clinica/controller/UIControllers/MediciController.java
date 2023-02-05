@@ -63,8 +63,6 @@ public class MediciController implements Observer<ConsultatieEvent> {
 
     @Override
     public void update(ConsultatieEvent event) {
-        if(event.getConsultatie().getIdMedic().equals(medic.getId())){
-            updateConsultatii();
-        }
+        updateConsultatii();
     }
 }

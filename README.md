@@ -3,7 +3,7 @@
 An app developed during the practice for the final exam at Advanced Methods of Programming.
 
 STORY:
-The code is written for a private clinic that still use a register for appointments. 
+The code is written for a private clinic that still uses a register for appointments. 
 
 <b>The entities are</b>
 <li> Sectie (Department) </li>

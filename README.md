@@ -7,7 +7,7 @@ The code is written for a private clinic that still uses a register for appointm
 
 <b>The entities are</b>
 <li> Sectie (Department) </li>
-<li> Medic (Medic) </li>
+<li> Medic (Doctor) </li>
 <li> Consultatie (Consultation) </li>
 <br>
 <b>The features</b>

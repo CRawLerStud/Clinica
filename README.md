@@ -1,4 +1,4 @@
-# Clinica
+# Clinic
 
 An app developed during the practice for the final exam at Advanced Methods of Programming.
 

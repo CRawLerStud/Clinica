@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.clinica.controller.UIControllers.AdaugaConsultatieController">
+   <Label layoutX="212.0" layoutY="14.0" text="Consultatie Noua" textAlignment="CENTER">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <ChoiceBox fx:id="medicChoiceBox" layoutX="156.0" layoutY="101.0" prefHeight="26.0" prefWidth="394.0"/>
+   <Label fx:id="sectieLabel" layoutX="97.0" layoutY="49.0" prefHeight="18.0" prefWidth="405.0"
+          style="-fx-alignment: center;" text="Sectia" textAlignment="CENTER"/>
+   <DatePicker fx:id="dataPicker" layoutX="156.0" layoutY="150.0" prefHeight="26.0" prefWidth="394.0"
+               promptText="Selectati o data pentru consultatie"/>
+   <Spinner fx:id="hourSpinner" layoutX="156.0" layoutY="194.0" prefHeight="26.0" prefWidth="394.0"/>
+   <Label alignment="CENTER" layoutX="57.0" layoutY="105.0" prefHeight="18.0" prefWidth="87.0" text="Doctor"/>
+   <Button layoutX="181.0" layoutY="352.0" mnemonicParsing="false" onAction="#confirmConsultatie" prefHeight="26.0"
+           prefWidth="246.0" text="OK"/>
+   <Label alignment="CENTER" layoutX="57.0" layoutY="154.0" prefHeight="18.0" prefWidth="87.0" text="Data"/>
+   <Label alignment="CENTER" layoutX="57.0" layoutY="198.0" prefHeight="18.0" prefWidth="87.0" text="Ora"/>
+   <Label alignment="CENTER" layoutX="57.0" layoutY="241.0" prefHeight="18.0" prefWidth="87.0" text="CNP Pacient"/>
+   <TextField fx:id="cnpTextField" layoutX="156.0" layoutY="238.0" prefHeight="26.0" prefWidth="394.0"
+              promptText="Introduceti CNP-ul pacientului"/>
+   <Label alignment="CENTER" layoutX="57.0" layoutY="289.0" prefHeight="18.0" prefWidth="87.0" text="Nume Pacient"/>
+   <TextField fx:id="numeTextField" layoutX="156.0" layoutY="285.0" prefHeight="26.0" prefWidth="394.0"
+              promptText="Introduceti numele pacientului"/>
+</AnchorPane>
